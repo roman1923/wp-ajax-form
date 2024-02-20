@@ -1,0 +1,177 @@
+html {
+	@media (max-width: 601px) {
+		margin-top: 0 !important;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		position: relative;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		.site-header, .site-footer {
+			padding: 0 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.site-title {
+				margin: 0;
+				padding: 0;
+				a {
+					font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+					font-size: 20px;
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+			}
+			.nav-color--1 {
+				ul {
+					list-style: none;
+					a {
+						color: white;
+						text-decoration: none;
+					}
+				}
+			}
+			.nav-color--2 {
+				ul {
+					list-style: none;
+					a {
+						color: black;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.site-footer {
+			padding: 10px 20px;
+			justify-content: space-around;
+			position: absolute;
+			bottom: 0;
+			width: -webkit-fill-available;
+			@media (max-width: 480px) {
+				.footer-nav {
+					display: none;
+				}
+			}
+		}
+		aside {
+			height: 100vh;
+			width: 200px;
+			@media (max-width: 480px) {
+				display: none;
+			}
+			h2, p {
+				margin: 0;
+				padding-top: 20px;
+				text-align: center;
+			}
+		}
+		.side-color--1 {
+			h2, p {
+				color: white;
+			}
+		}
+		.side-color--2 {
+			h2, p {
+				color: black;
+			}
+		}
+		.wp-block-contact-form-7-contact-form-selector {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			margin-top: 60px;
+			.wpcf7-spinner {
+				display: none;
+			}
+		}
+		.contact-form--section {
+			margin: 50px 80px 150px;
+			.container{
+				max-width: 1140px;
+				.contact-form--block {
+					.form-title {
+						font-family: "Overpass", sans-serif;
+						font-weight: 700;
+						font-size: 96px;
+						line-height: 100%;
+						color: #8B96AC;
+						letter-spacing: 0%;
+						padding-bottom: 0;
+						margin-bottom: 0;
+						margin-top: 0;
+						span {
+							color: #2A3B53;
+						}
+					}
+					.form-subtitle {
+						color: #8B96AC;
+						font-family: "Hind", sans-serif;
+						font-size: 24px;
+						padding-top: 0;
+						margin-top: 0;
+						margin-bottom: 50px;
+					}
+					.form {
+						display: flex;
+						flex-direction: column;
+						max-width: 560px;
+						font-family: "Hind", sans-serif;
+						input:not(:first-of-type), select, div {
+							margin-top: 20px;
+						}
+						input, select {
+							border: none;
+							border-bottom: 1px solid #5c6c8c;
+							padding-bottom: 10px;
+							font-family: "Hind", sans-serif;
+							&:focus-visible {
+								border: none;
+								outline: none;
+								border-bottom: 1px solid #5c6c8c;
+							}
+							&::placeholder {
+								font-family: "Hind", sans-serif;
+							}
+						}
+						.form-bottom {
+							display: flex;
+							justify-content: space-between;
+							label, .form_privacy_policy {
+								cursor: pointer;
+							}
+							label {
+								color: #8B96AC;
+								font-size: 18px;
+								line-height: 150%;
+								font-weight: 300;
+								letter-spacing: 4%; 
+								span {
+									text-decoration: underline;
+								}
+							}
+							#form_submit {
+								background: none;
+								cursor: pointer;
+								color: #2A3B53;
+								padding-bottom: 3px;
+								border-bottom: 2px solid #5879EF;
+								font-size: 28px;
+								line-height: 150%;
+								font-weight: 600;
+								font-family: "Overpass", sans-serif;
+							}
+						}
+						.notification_warning {
+							font-size: 16px;
+							color: #BA5B5B;
+							line-height: 160%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
